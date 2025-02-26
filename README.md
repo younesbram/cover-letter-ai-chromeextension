@@ -7,3 +7,7 @@ autoamte making coverl etters - chrome extension
 - pack from folder
 - enjoy
 
+# llm's supported :
+- console.groq.com
+- console.anthropic.com
+  
