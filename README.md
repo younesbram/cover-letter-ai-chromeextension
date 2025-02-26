@@ -5,7 +5,8 @@ autoamte making coverl etters - chrome extension
 - clone this repo / download it
 - go to chrome://extensions
 - pack from folder
-- enjoy
+- chrome-extension:// YOUR EXTENSION NAME /options.html or just click on the extension -> options for one time setup
+-  enjoy
 
 # llm's supported :
 - console.groq.com
