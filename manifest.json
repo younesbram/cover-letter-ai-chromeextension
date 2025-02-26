@@ -1,0 +1,30 @@
+{
+"manifest_version": 3,
+"name": "AI Cover Letter Generator",
+"version": "1.0",
+"description": "Generate personalized cover letters and LaTeX PDFs using AI",
+"permissions": [
+  "contextMenus",
+  "storage",
+  "activeTab",
+  "clipboardWrite",
+  "downloads"
+],
+"background": {
+  "service_worker": "background.js"
+},
+"content_scripts": [{
+  "matches": ["<all_urls>"],
+  "js": ["content.js"]
+}],
+"web_accessible_resources": [{
+  "resources": ["latex-worker.js"],
+  "matches": ["<all_urls>"]
+}],
+"options_page": "options.html",
+"icons": {
+  "16": "icon16.png",
+  "48": "icon48.png",
+  "128": "icon128.png"
+}
+}

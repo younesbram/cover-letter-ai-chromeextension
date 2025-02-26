@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cover Letter Generator Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>AI Model & API Key</h2>
+      <select id="modelSelect">
+        <option value="claude">Claude 3 Opus (Anthropic)</option>
+        <option value="groq">Groq (Llama 3.3-70b)</option>
+      </select>
+      <input type="password" id="apiKey" placeholder="Your API key" />
+      <p><small>Your API key stays in your browser - we don't see it</small></p>
+    </div>
+    
+    <div class="card">
+      <h2>Your Resume</h2>
+      <textarea id="resumeText" placeholder="Paste your resume text here..."></textarea>
+    </div>
+    
+    <button id="save">Save Settings</button>
+    <div id="status" class="status"></div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
